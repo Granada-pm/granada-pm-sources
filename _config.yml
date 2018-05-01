@@ -25,7 +25,7 @@ twitter_username: jjmerelo
 github_username:  JJ
 source: source
 destination: ../granada-pm.github.io
-category_dir: blog/categories
+category_path: blog/categories
 
 # Build settings
 markdown: kramdown
@@ -33,7 +33,9 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
-
+  - jekyll-category-pages
+  - jekyll-sitemap
+  
 keep_files:
   - CNAME
   - robots.txt
