@@ -17,19 +17,31 @@ title: Granada Perl Mongers
 subtitle: A site for Perl users in Granada, Spain
 email: jjmerelo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Site for the Granada Perl Mongers, we &heart; Perl and Perl 6.
+  Site for the Granada Perl Mongers, we ❤ Perl and Perl 6.
   
 baseurl: / # the subpath of your site, e.g. /blog
 url:  http://Granada-pm.github.io
 twitter_username: jjmerelo
 github_username:  JJ
+source: source
+destination: ../granada-pm.github.io
+category_dir: blog/categories
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
+keep_files:
+  - CNAME
+  - robots.txt
+  - favicon.png
+  - .git
+
+
+permalink: /blog/:title/
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
